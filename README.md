@@ -1,4 +1,4 @@
-# 🌌 Sikalundu.AI — Futuristic Personal Portfolio
+# 🌌 Sikkalundu — Futuristic Personal Portfolio
 
 [![GitHub license](https://img.shields.io/github/license/deedeestephen/portfolio?color=0bc5ea&style=flat-square)](https://github.com/deedeestephen/portfolio/blob/main/LICENSE)
 [![Vite Version](https://img.shields.io/badge/Vite-5.4.x-646CFF?logo=vite&style=flat-square)](https://vitejs.dev/)
@@ -6,7 +6,7 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.x-38B2AC?logo=tailwindcss&style=flat-square)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer--Motion-11.x-FF00C8?logo=framer&style=flat-square)](https://www.framer.com/motion/)
 
-Welcome to **Sikalundu.AI**, a high-performance, futuristic personal portfolio designed specifically for recruiters, tech leaders, and collaborators. This digital identity represents a cutting-edge fusion of sleek visual aesthetics, glassmorphism, dynamic animations, and high-fidelity interactive systems.
+Welcome to **Sikkalundu**, a high-performance, futuristic personal portfolio designed specifically for recruiters, tech leaders, and collaborators. This digital identity represents a cutting-edge fusion of sleek visual aesthetics, glassmorphism, dynamic animations, and high-fidelity interactive systems.
 
 ---
 

@@ -40,7 +40,7 @@ function Navbar() {
           href="/" 
           className="text-xl font-bold tracking-tight text-text-main group"
         >
-          Sikalundu<span className="text-cyan group-hover:text-purple transition-colors duration-300">.AI</span>
+          Sikkalundu
         </motion.a>
 
         {/* Desktop Nav */}
