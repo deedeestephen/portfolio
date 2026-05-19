@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJava, FaPython, FaReact, FaGithub, FaHtml5, FaCss3Alt, FaAws, FaBrain, FaShieldAlt, FaLink, FaCode } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
-import { SiFlutter, SiGooglecloud, SiFirebase, SiMysql } from 'react-icons/si';
+import { SiFlutter, SiGooglecloud, SiFirebase, SiMysql, SiFastapi, SiTensorflow } from 'react-icons/si';
 
 const skillsData = [
   { name: 'Java', icon: <FaJava className="text-red-500" />, category: 'Backend' },
@@ -20,6 +20,9 @@ const skillsData = [
   { name: 'Firebase', icon: <SiFirebase className="text-yellow-500" />, category: 'Backend/Cloud' },
   { name: 'MySQL', icon: <SiMysql className="text-blue-300" />, category: 'Database' },
   { name: 'Fullstack Dev', icon: <FaCode className="text-purple-400" />, category: 'Fullstack' },
+  { name: 'FastAPI', icon: <SiFastapi className="text-[#009688]" />, category: 'Backend/APIs' },
+  { name: 'React Native', icon: <FaReact className="text-blue-400" />, category: 'Mobile' },
+  { name: 'TensorFlow', icon: <SiTensorflow className="text-[#FF6F00]" />, category: 'AI/Machine Learning' },
 ];
 
 function Skills() {
