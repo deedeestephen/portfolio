@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void text-text-main font-sans antialiased;
+  }
+
+  /* Custom Scrollbar for a futuristic feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface-0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-3 rounded-full hover:bg-purple;
+  }
+
+  /* Glassmorphism utilities */
+  .glass-card {
+    @apply bg-glass-gradient backdrop-blur-[20px] border border-white/10 rounded-lg;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+}
