@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/#about' },
-  { name: 'Skills', href: '/#skills' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Certifications', href: '/certifications' },
-  { name: 'Contact', href: '#contact' }, // Contact is on every page, so a local hash is fine
+  { name: 'Home', href: '/', isRoute: true },
+  { name: 'About', href: '/#about', isRoute: false },
+  { name: 'Skills', href: '/#skills', isRoute: false },
+  { name: 'Projects', href: '/projects', isRoute: true },
+  { name: 'Certifications', href: '/certifications', isRoute: true },
+  { name: 'Contact', href: '#contact', isRoute: false },
 ];
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,15 +35,15 @@ function Navbar() {
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <motion.a 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          href="/" 
-          className="text-xl font-bold tracking-tight text-text-main group"
         >
-          Sikkalundu
-        </motion.a>
+          <Link to="/" className="text-xl font-bold tracking-tight text-text-main group">
+            Sikkalundu
+          </Link>
+        </motion.div>
 
         {/* Desktop Nav */}
         <motion.ul 
@@ -61,12 +63,23 @@ function Navbar() {
                 visible: { opacity: 1, y: 0 }
               }}
             >
-              <a 
-                href={link.href} 
-                className="text-text-muted hover:text-cyan transition-colors duration-300 hover:drop-shadow-[0_0_8px_rgba(0,219,233,0.8)]"
-              >
-                {link.name}
-              </a>
+              {link.isRoute ? (
+                <Link
+                  to={link.href}
+                  className={`transition-colors duration-300 hover:drop-shadow-[0_0_8px_rgba(0,219,233,0.8)] ${
+                    location.pathname === link.href ? 'text-cyan' : 'text-text-muted hover:text-cyan'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a 
+                  href={link.href} 
+                  className="text-text-muted hover:text-cyan transition-colors duration-300 hover:drop-shadow-[0_0_8px_rgba(0,219,233,0.8)]"
+                >
+                  {link.name}
+                </a>
+              )}
             </motion.li>
           ))}
         </motion.ul>
@@ -85,3 +98,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
