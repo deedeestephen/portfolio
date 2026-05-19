@@ -128,8 +128,9 @@ function Contact() {
                 >
                   <FaCheckCircle className="text-xl shrink-0" />
                   <div className="text-sm">
-                    <strong className="block font-mono">Transmission Successful!</strong>
-                    Your message has been queued. Please check your email inbox to activate FormSubmit if this is the first submission.
+                    <strong className="block font-mono text-base">Transmission Successful!</strong>
+                    Thank you for reaching out, hope to get in touch with you soon!!
+                    <span className="block text-xs mt-1 text-teal/70 font-mono">(If this is the first message, please verify the activation email sent to your inbox.)</span>
                   </div>
                 </motion.div>
               )}
