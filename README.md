@@ -123,5 +123,5 @@ Feel free to reach out to me for internship offers, software contracts, or colla
 *   **Email:** [sikalundumwinga@gmail.com](mailto:sikalundumwinga@gmail.com)
 
 ---
-
+*    **if want to access the portfolio live deployed page follow link:** (https://portfoliosikalundu.vercel.app/)
 *Engineered with precision and futuristic design guidelines. 🌌*
