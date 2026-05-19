@@ -12,7 +12,7 @@ import CertificationsPage from './pages/CertificationsPage';
 function App() {
   return (
     <Router>
-      <div className="relative w-full min-h-screen bg-void text-text-main overflow-x-hidden cursor-none">
+      <div className="relative w-full min-h-screen text-text-main overflow-x-hidden cursor-none">
         <CustomCursor />
         <BackgroundEffects />
 
